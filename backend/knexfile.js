@@ -1,5 +1,5 @@
 
-const config = require('./src/config');
+const config = require('./src/server.js');
 
 module.exports = {
 
