@@ -3,23 +3,6 @@ const config = require('./src/server.js');
 
 module.exports = {
 
-  production: {
-    client: 'postgresql',
-    connection: {
-      host: config.dbhost,
-      database: config.dbname,
-      user: config.dbuser,
-      password: config.dbpwd
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      directory: './src/database/migrations'
-    }
-  },
-
   development: {
     client: 'sqlite3',
     connection: {
